@@ -19,40 +19,46 @@
     />
 
     <title>Flower Store</title>
+  <link rel="stylesheet" type="text/css" href="./DetailProduct.css">
   <link rel="stylesheet" type="text/css" href="./main.css">
- 
+  <link rel="stylesheet" type="text/css" href="./Cart.css">
+
+</head>
 <body>
-<?php 
+<?php require_once ('CardFavorit.php') ?>
+<?php require_once ('Navbar.php') ?>
+    <!-- <?php 
       $username=$_POST['username'];
       $password=$_POST['password'];
-      
-    ?>
-  <nav class="navbar">
-      <img src="./assets/icon.svg" width="30" alt="" srcset="">
+    ?>  -->
+<?php navbar(username: $username, photourl: "https://images.unsplash.com/photo-1635672540255-32be6349d02d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=761&q=80"); ?>
 
-      <ul class="flex">
-        <li>
-          Home
-        </li>
-        <li>
-          Cart
-        </li><li>
-          Favorit
-        </li><li>
-          Category
-        </li>
-        <li> <img src="https://images.unsplash.com/photo-1635672540255-32be6349d02d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=761&q=80" class="avatar" /> <?php echo $username; ?> </li>
-      </ul>
 
-    </nav>
-
-  <div class="wrapper fadeInDown">
-  <div id="formContent">
-  
-    
+  <div class="wrapper-center fadeInDown" >
+  <div class="cart-wrapper">
+    <!-- Tabs Titles -->
+    <div class="cart-container">
+      <h2 class="active">My Favorit</h2>
+      <br/>
+      <?php 
+              component(
+                productname: "Fairest of Them All", productprice: "570.000", productimg: "https://images.unsplash.com/photo-1455582916367-25f75bfc6710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=527&q=80"
+              );
+              component(
+                productname: "Fairest of Them All", productprice: "570.000", productimg: "https://images.unsplash.com/photo-1455582916367-25f75bfc6710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=527&q=80"
+              );
+              component(
+                productname: "Fairest of Them All", productprice: "570.000", productimg: "https://images.unsplash.com/photo-1455582916367-25f75bfc6710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=527&q=80", 
+              );
+              component(
+                productname: "Fairest of Them All", productprice: "570.000", productimg: "https://images.unsplash.com/photo-1455582916367-25f75bfc6710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=527&q=80"
+              );
+            ?>
+    </div>
+   </div>
 
    
-    <a href="login.php">Login Lagi</a>
+
 
   </div>
 </div>

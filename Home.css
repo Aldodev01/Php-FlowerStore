@@ -1,0 +1,50 @@
+.headline {
+  color: white;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.scroller-y {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  overflow-x: scroll;
+}
+
+.wrappered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.wrapper-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  wdith: 100%;
+}
+
+.flexible {
+  display: flex;
+  width: 100%;
+}
+
+.image-1 {
+  width: 100%;
+}
+
+.image-2 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+}

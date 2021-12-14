@@ -1,0 +1,149 @@
+.p-c-d-wrap {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 30px;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.p-c-d-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.p-c-d-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 0.4px solid white;
+  border-radius: 10px;
+}
+
+.p-c-d-judul {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.p-c-d-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.width-p {
+  min-width: 100px;
+}
+
+.p-c-d-harga {
+  color: rgb(0, 0, 0);
+}
+
+.d-harga {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.desc {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.d-desc {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 30px;
+  padding: 30px;
+}
+
+.p-c-d-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-c-d-button {
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.p-c-d-button-plus {
+  background-color: #389fff;
+}
+.p-c-d-button-minus {
+  background-color: #ff3895;
+}
+
+.button-asede {
+  padding: 10px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.button-asede .detail-p-p {
+  font-size: 40px;
+}
+.button-asede .detail-p-g {
+  font-size: 20px;
+}
+
+.mqq {
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .p-c-d-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mqq {
+    width: 100%;
+    flex: 1;
+    max-width: 1000px;
+  }
+
+  .p-c-d-img {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    object-fit: cover;
+    border: 0.4px solid white;
+    border-radius: 10px;
+  }
+
+  .desc {
+    padding: 15px;
+  }
+}

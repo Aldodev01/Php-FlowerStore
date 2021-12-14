@@ -20,40 +20,40 @@
 
     <title>Flower Store</title>
   <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" type="text/css" href="./Profile.css">
+
 </head>
 <body>
-
+    <!-- <?php 
+      $username=$_POST['username'];
+      $password=$_POST['password'];
+    ?>  -->
   <div class="wrapper-center fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
-    <h2 class="active"> Sign In </h2>
-    <h2 class="inactive underlineHover">Sign Up </h2>
+    <h2 class="active">My</h2>
+    <h2 class="inactive underlineHover">Profile</h2>
 
+    <img src="https://images.unsplash.com/photo-1635672540255-32be6349d02d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=761&q=80" class="pro-img"/>
 
-    <!-- Login Form -->
-    <form action="Home.php" method="POST">
-      <br/>
-      <br/>
-      <input type="text" id="username" class="fadeIn second" name="username" placeholder="Username">
-      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
-      
-      <br/>
-      <br/>
-      <br/>
+   <div class="pro-wrap">
+     <h2>Aldodevv</h2>
+     <h2>********</h2>
+     <br/>
+     <br/>
+     <br/>
 
-       <a href="home.php">
-         <button class="button" type="submit" class="fadeIn fourth" >SIGN IN</button>
-       </a>
-    </form>
+ 
+     <button class="button" type="submit" class="fadeIn fourth" >CHANGE ?</button>
+   </div>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
+      <a class="underlineHover" href="Promo.php">GET PREMIUM</a>
     </div>
 
   </div>
 </div>
 </body>
-
 </html>
 

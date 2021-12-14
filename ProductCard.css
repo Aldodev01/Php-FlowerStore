@@ -1,0 +1,31 @@
+.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 30px;
+  color: black;
+}
+
+.product-card-img {
+  width: 230px;
+  height: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.product-card-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.product-card-judul {
+  height: 50px;
+}

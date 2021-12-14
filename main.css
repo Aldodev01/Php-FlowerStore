@@ -12,6 +12,47 @@ body {
   background-color: #56baed;
 }
 
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+  z-index: 2000;
+}
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+  z-index: 2000;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #56baed; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #56baed; /* creates padding around scroll thumb */
+  z-index: 2000;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scrolled-y::-webkit-scrollbar {
+  height: 6px; /* width of the entire scrollbar */
+  width: 100%;
+  z-index: 201;
+}
+.scrolled-y::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+  z-index: 200;
+}
+.scrolled-y::-webkit-scrollbar-thumb {
+  background-color: #56baed; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #56baed; /* creates padding around scroll thumb */
+  z-index: 200;
+}
+
 a {
   color: #92badd;
   display: inline-block;
@@ -32,13 +73,29 @@ h2 {
 /* STRUCTURE */
 
 .wrapper {
+  width: 100%;
+  height: auto;
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    padding: 10px;
+  }
+}
+
+.wrapper-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  min-height: 100%;
-  padding: 20px;
+  margin-top: 70px;
 }
 
 #formContent {
@@ -237,7 +294,7 @@ input[type="password"]:placeholder {
   color: #cccccc;
 }
 
-button {
+.button {
   background-color: #56baed;
   border: none;
   color: white;
